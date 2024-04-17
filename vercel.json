@@ -6,10 +6,14 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "./server.js"
+            "source": "/api/(.*)",
+            "destination": "https://khao-backend.vercel.app/"
+        },
+        {
+            "source": "/",
+            "destination": "https://khao.vercel.app/"
         }
     ]
 }
