@@ -9,11 +9,11 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "https://khao-backend.vercel.app/"
+            "destination": "https://khao-backend.vercel.app"
         },
         {
             "source": "/",
-            "destination": "https://khao.vercel.app/"
+            "destination": "https://khao.vercel.app"
         }
     ]
 }
