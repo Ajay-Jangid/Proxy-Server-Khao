@@ -8,8 +8,11 @@
     ],
     "routes": [
         {
-            "src": "/",
-            "dest": "https://khao.vercel.app/"
+            url: '/',
+            proxy: {
+                 target: "https://khao.vercel.app/",
+                 changeOrigin: true,
+            }
         }
-    ]
+     ]
 }
