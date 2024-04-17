@@ -8,11 +8,11 @@
     ],
     "rewrites": [
         {
-            "source": "/api(.*)",
+            "source": "/api/**",
             "destination": "https://khao-backend.vercel.app"
         },
         {
-            "source": "/ui(.*)",
+            "source": "/ui/**",
             "destination": "https://khao.vercel.app"
         },
         {
