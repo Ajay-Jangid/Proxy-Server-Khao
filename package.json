@@ -5,19 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "build": "echo 'No build step required'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JanssenBrm/api-gateway.git"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JanssenBrm/api-gateway/issues"
-  },
-  "homepage": "https://github.com/JanssenBrm/api-gateway#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
