@@ -2,7 +2,7 @@ const ROUTES = [
     {
         url: '/ui/**',
         proxy: {
-            target: "http://localhost:1234/",
+            target: "https://khao.vercel.app/",
             changeOrigin: true,
             pathRewrite: {
                 [`^/ui/`]: ""
@@ -12,7 +12,7 @@ const ROUTES = [
     {
         url: '/api/**',
         proxy: {
-            target: "http://localhost:3000/",
+            target: "https://khao-backend.vercel.app/",
             changeOrigin: true,
             pathRewrite: {
                 [`^/api/`]: ""
@@ -22,7 +22,7 @@ const ROUTES = [
     {
         url: '/',
         proxy: {
-            target: "http://localhost:1234/",
+            target: "https://khao.vercel.app/",
             changeOrigin: true,
         }
     }
