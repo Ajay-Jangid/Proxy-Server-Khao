@@ -6,13 +6,8 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
-        {
-            url: '/',
-            proxy: {
-                 target: "https://khao.vercel.app/",
-                 changeOrigin: true,
-            }
-        }
-     ]
+  "rewrites": [
+      { "source": "/", 
+        "destination": "https://khao.vercel.app/"
+      }]
 }
