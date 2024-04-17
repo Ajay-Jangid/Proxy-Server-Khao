@@ -8,12 +8,12 @@
     ],
     "rewrites": [
         {
-            "source": "/api/**",
-            "destination": "https://khao-backend.vercel.app"
+            "source": "/ui(.*)",
+            "destination": "https://khao.vercel.app"
         },
         {
-            "source": "/ui/**",
-            "destination": "https://khao.vercel.app"
+            "source": "/api(.*)",
+            "destination": "https://khao-backend.vercel.app"
         },
         {
             "source": "/",
