@@ -2,7 +2,7 @@ const ROUTES = [
     {
         url: '/ui/**',
         proxy: {
-            target: "https://khao.vercel.app/",
+            target: "https://khao-food-website.onrender.com/",
             changeOrigin: true,
             pathRewrite: {
                 [`^/ui/`]: ""
@@ -12,7 +12,7 @@ const ROUTES = [
     {
         url: '/api/**',
         proxy: {
-            target: "https://khao-backend.vercel.app/",
+            target: "https://khao-backend.onrender.com/",
             changeOrigin: true,
             pathRewrite: {
                 [`^/api/`]: ""
@@ -22,7 +22,7 @@ const ROUTES = [
     {
         url: '/',
         proxy: {
-            target: "https://khao.vercel.app/",
+            target: "https://khao-food-website.onrender.com/",
             changeOrigin: true,
         }
     }

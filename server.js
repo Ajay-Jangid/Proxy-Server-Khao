@@ -18,7 +18,7 @@ var httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(3002, () => {
     console.log(
-        "Example app listening on port 3000!"
+        "Example app listening on port 3002!"
     );
 });
 
