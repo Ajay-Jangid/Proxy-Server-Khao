@@ -6,10 +6,18 @@
             "use": "@vercel/node"
         }
     ],
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/server"
-        }
-    ]
+   "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://khao-backend.vercel.app/:path*"
+    },
+    {
+      "source": "/api/:path*/",
+      "destination": "https://khao-backend.vercel.app/:path*/"
+    },
+      {
+      "source": "/",
+      "destination": "https://khao.vercel.app/"
+    }  
+  ]
 }
